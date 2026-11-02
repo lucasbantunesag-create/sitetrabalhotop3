@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Top 3 Cantores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1>Meu Top 3 Cantores</h1>
+    <p>Três nomes, zero imparcialidade e nenhuma intenção de aceitar reclamação.</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#kendrick">Kendrick Lamar</a></li>
+        <li><a href="#kanye">Kanye West</a></li>
+        <li><a href="#tyler">Tyler, the Creator</a></li>
+        <li><a href="#contato">Deixe sua opinião</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="kendrick" class="faixa kendrick">
+      <h2><span class="posicao">1</span> Kendrick Lamar</h2>
+      <article>
+        <figure>
+          <img src="imagens/kendrick.png" alt="Homem de camiseta branca e coroa de espinhos, de olhos fechados, recostado num pufe rosado">
+          <figcaption>Kendrick Lamar, descansando depois de escrever mais um verso impossível.</figcaption>
+        </figure>
+        <div class="texto">
+          <p>Nascido em Compton, Kendrick transforma rap em literatura. Ele ganhou até um Prêmio Pulitzer, o que deixa qualquer trabalho de português meu parecendo rascunho.</p>
+          <p><strong>Para começar a ouvir:</strong> <em>good kid, m.A.A.d city</em>, <em>To Pimp a Butterfly</em> e <em>DAMN.</em></p>
+          <p><a href="https://pt.wikipedia.org/wiki/Kendrick_Lamar" target="_blank" rel="noopener">Saiba mais na Wikipédia</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="kanye" class="faixa kanye">
+      <h2><span class="posicao">2</span> Kanye West</h2>
+      <article>
+        <figure>
+          <img src="imagens/kanye.png" alt="Homem sorrindo com os braços erguidos, de moletom roxo e jaqueta camuflada, cercado de pessoas à noite">
+          <figcaption>Kanye West, comemorando a própria discografia (com razão).</figcaption>
+        </figure>
+        <div class="texto">
+          <p>Começou como produtor, virou astro e mudou o som do hip hop várias vezes. Tem opinião sobre tudo, mas os álbuns falam por ele, e falam alto.</p>
+          <p><strong>Para começar a ouvir:</strong> <em>The College Dropout</em>, <em>Graduation</em> e <em>My Beautiful Dark Twisted Fantasy</em>.</p>
+          <p><a href="https://pt.wikipedia.org/wiki/Kanye_West" target="_blank" rel="noopener">Saiba mais na Wikipédia</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="tyler" class="faixa tyler">
+      <h2><span class="posicao">3</span> Tyler, the Creator</h2>
+      <article>
+        <figure>
+          <img src="imagens/tyler.png" alt="Homem de boné marrom com a letra G, piscando um olho e segurando um troféu Grammy dourado">
+          <figcaption>Tyler, the Creator, apresentando o Grammy como se fosse um filhote.</figcaption>
+        </figure>
+        <div class="texto">
+          <p>Rapper, produtor, estilista e figurinista de si mesmo. Cada álbum dele vem com um personagem, uma cor e um visual novos, e ele ainda ganha prêmio no final.</p>
+          <p><strong>Para começar a ouvir:</strong> <em>Flower Boy</em>, <em>IGOR</em> e <em>Call Me If You Get Lost</em>.</p>
+          <p><a href="https://pt.wikipedia.org/wiki/Tyler,_the_Creator" target="_blank" rel="noopener">Saiba mais na Wikipédia</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Discorda do meu top 3? Fala aí</h2>
+      <p>Preencha o formulário e conte o seu top 3. Prometo ler com a mente aberta (mentira).</p>
+
+      <form id="formulario" action="mailto:lucasaurudo777@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Seus dados</legend>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sua opinião</legend>
+          <p class="rotulo">Quem merece o primeiro lugar?</p>
+          <label class="opcao"><input type="radio" name="primeiro" value="kendrick" checked> Kendrick Lamar</label>
+          <label class="opcao"><input type="radio" name="primeiro" value="kanye"> Kanye West</label>
+          <label class="opcao"><input type="radio" name="primeiro" value="tyler"> Tyler, the Creator</label>
+          <label class="opcao"><input type="radio" name="primeiro" value="outro"> Outro (vai ter que explicar)</label>
+
+          <label for="nota">Nota para o meu gosto musical</label>
+          <select id="nota" name="nota">
+            <option value="10">10, impecável</option>
+            <option value="8">8, muito bom</option>
+            <option value="5">5, dá para melhorar</option>
+            <option value="0">0, preciso conversar com você</option>
+          </select>
+
+          <label for="mensagem">Seu top 3 e uma justificativa</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui..."></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar opinião</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Página feita por mim para o trabalho de HTML e CSS. Todas as opiniões aqui são minhas e estão certas.</p>
+    <p>Trabalho de html e css - IFsul Jaguarão</p>
+  </footer>
+
+</body>
+</html>
