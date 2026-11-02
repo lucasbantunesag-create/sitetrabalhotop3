@@ -74,7 +74,10 @@
       <h2>Discorda do meu top 3? Fala aí</h2>
       <p>Preencha o formulário e conte o seu top 3. Prometo ler com a mente aberta (mentira).</p>
 
-      <form id="formulario" action="mailto:lucasaurudo777@gmail.com" method="post" enctype="text/plain">
+      <form id="formulario" action="https://formsubmit.co/lucasaurudo777@gmail.com" method="POST">
+        <!-- Campos ocultos do FormSubmit: assunto e formato do e-mail -->
+        <input type="hidden" name="_subject" value="Nova opinião sobre o Top 3 Cantores">
+        <input type="hidden" name="_template" value="table">
         <fieldset>
           <legend>Seus dados</legend>
           <label for="nome">Nome</label>
